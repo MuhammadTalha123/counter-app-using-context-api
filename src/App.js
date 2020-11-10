@@ -9,7 +9,7 @@ const Num = createContext();
 function App() {
   return (
     <div className="App">
-    <Num.Provider>
+    <Num.Provider value='1'>
       <Number/>
       <Minus/>
       <Add/>
@@ -19,3 +19,4 @@ function App() {
 }
 
 export default App;
+export { Num };
