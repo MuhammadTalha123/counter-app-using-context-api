@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { FunMin } from './App';
 function Minus() {
+    const minfun = useContext(FunMin);
     return(
         <>
-            <button>
+            <button onClick={()=>{
+                minfun();
+            }}>
                 -
             </button>
         </>
