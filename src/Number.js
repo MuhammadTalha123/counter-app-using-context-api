@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Num } from './App';
 
 function Number() {
@@ -6,3 +6,4 @@ function Number() {
     return <h1>{number}</h1>
 }
 export default Number;
+  

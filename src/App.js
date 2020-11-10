@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import Number from './Number';
 import './App.css';
 import Minus from './Minus';
@@ -7,9 +7,10 @@ import Add from './Add';
 const Num = createContext();
 
 function App() {
+  const [number, setnumber] = useState(0);
   return (
     <div className="App">
-    <Num.Provider value='1'>
+    <Num.Provider value={number}>
       <Number/>
       <Minus/>
       <Add/>
