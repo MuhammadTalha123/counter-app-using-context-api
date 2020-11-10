@@ -5,6 +5,8 @@ import Minus from './Minus';
 import Add from './Add';
 
 const Num = createContext();
+const FunAdd = createContext();
+const FunMin = createContext();
 
 function App() {
   const [number, setnumber] = useState(0);
@@ -20,9 +22,13 @@ function App() {
   return (
     <div className="App">
     <Num.Provider value={number}>
+    <FunAdd.Provider value={plus}>
+    <FunMin.Provider value={minus}>
       <Number/>
       <Minus/>
       <Add/>
+      </FunMin.Provider>
+      </FunAdd.Provider>
       </Num.Provider>  
     </div>
   );
