@@ -1,6 +1,8 @@
 import React from 'react';
+import { Num } from './App';
 
 function Number() {
-    return <h1>1</h1>
+    const number = useContext(Num)
+    return <h1>{number}</h1>
 }
 export default Number;
