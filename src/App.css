@@ -5,6 +5,9 @@
 
 body {
   background-color: goldenrod;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1 {
@@ -17,4 +20,8 @@ button {
   padding: 15px;
   background-color: goldenrod;
   border: 5px solid goldenrod;
+}
+
+button:hover {
+  background-color: greenyellow;
 }
