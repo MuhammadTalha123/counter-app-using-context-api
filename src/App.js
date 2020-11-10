@@ -12,7 +12,12 @@ function App() {
   const [number, setnumber] = useState(0);
 
   function minus() {
-    setnumber(number - 1);
+
+    if(number==0) {
+      alert('Zero limit reached');
+    } else {
+      setnumber(number - 1);
+    }
   }
 
   function plus() {
