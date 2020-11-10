@@ -8,6 +8,15 @@ const Num = createContext();
 
 function App() {
   const [number, setnumber] = useState(0);
+
+  function minus() {
+    setnumber(number - 1);
+  }
+
+  function plus() {
+    setnumber(number + 1);
+  }
+
   return (
     <div className="App">
     <Num.Provider value={number}>
