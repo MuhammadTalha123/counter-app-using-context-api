@@ -19,7 +19,7 @@ button {
   margin: 20px;
   padding: 15px;
   background-color: goldenrod;
-  border: 5px solid goldenrod;
+  border: 1px solid black;
 }
 
 button:hover {
